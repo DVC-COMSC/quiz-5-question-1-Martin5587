@@ -1,7 +1,7 @@
-#include    <iostream>
+#include <iostream>
 using namespace std;
 
-int letterRowTriangle(int rows) {
+void letterRowTriangle(int rows) {
    for (int i = 1; i <= rows; ++i) {
       char letter = 'A';
       for (int j = 0; j < i; ++j) {
@@ -21,9 +21,10 @@ int main()
 
  if (totalRows <=0) {
    cout << "Error. To display, number of rows must be at LEAST 1." << endl;
+   return 1;
 
  }
 
-return letterRowTriangle(totalRows);
-  
+   letterRowTriangle(totalRows);
+  return 0;
 }
