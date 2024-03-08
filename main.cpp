@@ -14,6 +14,16 @@ int letterRowTriangle(int rows) {
 
 int main()
 {
-   
+
+ int totalRows;
+ cout << "Enter the number of rows: ";
+ cin >> totalRows;
+
+ if (totalRows <=0) {
+   cout << "Error. To display, number of rows must be at LEAST 1." << endl;
+
+ }
+
+return letterRowTriangle(totalRows);
   
 }
